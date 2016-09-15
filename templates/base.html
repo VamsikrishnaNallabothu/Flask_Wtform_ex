@@ -1,15 +1,8 @@
 {% extends "bootstrap/base.html" %}
-
 {% block title %}Flask{% endblock %}
-
 {% block head %}
 {{ super() }}
-<!--
-<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
--->
 {% endblock %}
-
 {% block navbar %}
 <div class="navbar navbar-inverse" role="navigation">
     <div class="container">
@@ -30,21 +23,17 @@
     </div>
 </div>
 {% endblock %}
-
 {% block content %}
 <div class="container">
     {% block page_content %}
     {% endblock %}
 </div>
 {% endblock %}
-
 <!-- For importing moment.js from the bootstrap -->
 {% block scripts %}
 {{ super() }}
 {{ moment.include_moment() }}
 {% endblock %}
-
-
 <div class = "carousel">
     <br>
     <br>
@@ -54,11 +43,6 @@
     <br>
     <br>
 </div>
-<!--
-
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
--->
 
 <div class="footer" >
     {% block footer %}
