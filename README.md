@@ -1,2 +1,2 @@
 # Flask_ex1
-wtforms testing
+Python Flask: Testing the Wtforms functionality
